@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+float main()
+{
+    float a=53.2;
+    printf("Weight of the person is %f",a); 
+    return 0;
+}
