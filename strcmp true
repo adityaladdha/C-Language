@@ -1,0 +1,13 @@
+
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+    int  len;
+    char a[100]="blah";
+    char b[100]="blah";
+    len=strcmp(a,b);
+    printf("%d",len);
+    return 0;
+}
