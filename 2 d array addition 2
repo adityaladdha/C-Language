@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[1][1]={{2}},b[1][1]={{1}},c[1][1]={{4}};
+    int d;
+    d=a[0][0]+b[0][0]+c[0][0];
+    printf("The sum is = %d",d);
+    return 0;
+}
