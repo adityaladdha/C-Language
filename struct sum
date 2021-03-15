@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+struct sum
+{
+    int a,b,c,d;
+};
+int main()
+{
+    struct sum s;
+    s.a=2;
+    s.b=3;
+    s.c=4;
+    s.d= s.a+s.b+s.c;
+    printf("%d",s.d); 
+    return 0;
+}
