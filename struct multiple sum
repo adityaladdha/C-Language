@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+ struct sum
+ {
+     int a,b,c,d;
+ } aditya;
+ struct mul
+ {
+     int a,b,c,d;
+ }  aryan;
+ int main()
+ {
+     struct sum piyush ={1,1};
+     piyush.d = piyush.a + piyush.b + piyush.c;
+     printf("Piyush : %d\n\n",piyush.d);
+
+     aryan.a=5;
+     aryan.b=3;
+     aryan.c=4;
+     aryan.d = aryan.a + aryan.b + aryan.c;
+     printf("aryan : %d\n\n",aryan.d);
+
+}
