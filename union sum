@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+ union sum
+ {
+     int a,b,c,d;
+ } piyush;
+ 
+ int main()
+ {
+     union sum piyush ={5,3};
+     piyush.d = piyush.a + piyush.b;
+     printf("Piyush : %d\n\n",piyush.d);
+
+    return 0;
+
+ }
