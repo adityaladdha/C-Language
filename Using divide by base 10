@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+  int a=109,b=218,n,c;
+  n=a+b;
+  printf("%d\n",n);
+  c=n/10;
+  printf("%d",c);
+  return 0;
+}
