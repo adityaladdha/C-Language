@@ -3,7 +3,7 @@
 int main()
 {
     int age;
-    printf("The age of AL =%d",age);
+    printf("The age of AL = ",age);
     scanf("%d",&age);
     if(age>18)
     {
