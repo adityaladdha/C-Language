@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    int a=5,b;
+    b=a>>1;
+    printf("a1 = %d\n",b);
+    b=a<<1;
+    printf("a2 = %d",b);
+    return 0;
+}
