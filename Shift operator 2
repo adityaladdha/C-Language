@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    int a=5,b=2,c=5,d=2;
+    a=a<<b;
+    printf("Left Shift = %d\n",a);
+    c=c>>d;
+    printf("Right Shift = %d",c);
+    return 0;
+}
