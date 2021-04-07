@@ -1,13 +1,14 @@
 #include<stdio.h>
-int A()
 
+void letterA()
 {
+    
     int i,j;
     for(i=1;i<=7;i++)
     {
         for(j=1;j<=5;j++)
         {
-            if((i==1&&j>=1&&j<=5)||(j==1&&i>1)||(j==5&&i>1)||(i==4)||i==7)
+            if((i==1&&j>=1&&j<=5)||(j==1&&i>1)||(j==5&&i>1)||(i==4))
             {
                 printf("*");
             }
@@ -18,9 +19,9 @@ int A()
         }
         printf("\n");
     }
-}
-int B()
 
+}
+void letterB()
 {
     int i,j;
     for(i=1;i<=7;i++)
@@ -39,8 +40,45 @@ int B()
         printf("\n");
     }
 }
-int E()
-
+void letterC()
+{
+    int i,j;
+    for(i=1;i<=7;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if((i==1&&j>=1&&j<=5)||(j==1&&i>1)||i==7)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+void letterD()
+{
+      int i,j;
+    for(i=1;i<=7;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if((i==1&&j>=1&&j<5)||(j==1&&i>1)||(i==7&&j>=1&&j<5)||(j==5&&i>1&&i<7))
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+void letterE()
 {
     int i,j;
     for(i=1;i<=7;i++)
@@ -58,4 +96,20 @@ int E()
         }
         printf("\n");
     }
+}
+int main()
+{
+    int n;
+    printf("Enter your option : ");
+    scanf("%d",&n);
+    switch(n)
+    {
+        case 1 :letterA();break;
+        case 2 :letterB();break;
+        case 3 :letterC();break;
+        case 4 :letterD();break;
+        case 5 :letterE();break;
+        default :printf("Invalid Input");
+    }
+    return 0;
 }
