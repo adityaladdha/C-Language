@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    char *p[]={"Aditya","Aryan"};
+    int i,c;
+    c=sizeof(p)/sizeof(p[0]);
+    printf("Address = %d\n\n",p[0]);
+    for(i=0;i<c;i++)
+    {
+        printf("Letter = %s\n",p[i]);
+        printf("Address = %d\n",p[i]);
+    }
+    return 0;
+}
