@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int a[]={1,2,2,3};
+    int *p,**q,c,i;
+    p=&a;
+    q=&p;
+    printf("%d\n",&a);
+    printf("%d\n",p);
+    printf("%d\n",&p);
+    printf("%d\n",*p);
+    printf("%d\n",*q);
+    printf("%d",**q);
+}
